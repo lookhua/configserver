@@ -1,4 +1,4 @@
-SPRING_CONFIG_URI: http://192.168.59.74:8888
+SPRING_CONFIG_URI: http://localhost:8888
 server:
   port: 8761
 spring:
@@ -12,6 +12,7 @@ spring:
 eureka:
   instance:
     hostname: localhost
+    prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
